@@ -1,0 +1,35 @@
+.header {
+    min-height: 840px;
+    background-image: url(/images/header/header-bg.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding-top: 1.875rem;
+    padding-bottom: 4.625rem;
+
+
+    &__top-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        font-size: 3rem;
+        color: $accent;
+        font-family: $font-accent;
+        text-align: center;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5.0625rem;
+    }
+    &__footer{
+        display: grid;
+        grid-template-columns: 1fr  1fr;
+        gap: 1.875rem;
+    }
+}
+
+
