@@ -6,5 +6,7 @@
 }
 
 .appartments__cards {
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
 }

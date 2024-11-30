@@ -215,8 +215,15 @@ a:hover {
   margin-bottom: 5.5rem;
 }
 
+.appartments__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+}
+
 .card {
   display: inline-block;
+  overflow: hidden;
   position: relative;
   color: #FFFFFF;
 }
@@ -238,6 +245,15 @@ a:hover {
   opacity: 1;
 }
 
+.card__img {
+  transition: all 0.2s ease-in;
+}
+
+.card:hover .card__img {
+  transform: scale(1.1);
+  filter: contrast(110%) brightness(1.2) saturate(1.2);
+}
+
 .card__title {
   position: absolute;
   left: 3.125rem;
@@ -246,4 +262,74 @@ a:hover {
   z-index: 2;
   font-size: 1.5rem;
   z-index: 9;
+}
+
+.cta {
+  padding: 11.25rem 0;
+  background-image: url(/images/cta-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.cta__title {
+  margin-bottom: 1.0625rem;
+}
+
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem;
+}
+
+.cta__text {
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.cta__text p + p {
+  margin-top: 1em;
+}
+
+.cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.1875rem 1.875rem;
+}
+
+.form__input {
+  height: 3.125rem;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.93;
+  color: #FFFFFF;
+}
+.form__input::-moz-placeholder {
+  color: #bebebe;
+}
+.form__input::placeholder {
+  color: #bebebe;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 0.2s ease-in;
+}
+
+.form-privacy {
+  font-size: 0.8125rem;
+  color: #e7e7e7;
+  text-align: center;
+  line-height: 1.23;
+}
+
+.form__button {
+  background-color: #D4C17F;
+  height: 3.125rem;
+  padding: 0.75rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.2s ease-in;
+}
+.form__button:hover {
+  background-color: #e5ca6e;
 }
