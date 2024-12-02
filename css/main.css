@@ -333,3 +333,39 @@ a:hover {
 .form__button:hover {
   background-color: #e5ca6e;
 }
+
+.video {
+  text-align: center;
+}
+
+.video__link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.video__link:hover .video__play {
+  transition: all 0.2s ease-in;
+  filter: contrast(130%) brightness(1.2) saturate(1.2);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video__play {
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-map {
+  padding: 11.25rem 0;
+}
+
+.section-map__title {
+  margin-bottom: 5.5rem;
+}
+
+.map {
+  background: #626262;
+  height: 22.375rem;
+}
