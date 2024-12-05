@@ -2,13 +2,9 @@
     position: relative;
     &:before{
         content: 'III';
-        opacity: 0.02;
-        font-size: 25rem;
-        font-family: $font-accent;
-        position: absolute;
-        top: 0;
         right: calc(50% + 34.6875rem);
         transform: translate(50%, 0%);
+        @include decorNumber;
         line-height: 1;
     }
 }

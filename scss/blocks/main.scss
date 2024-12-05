@@ -1,6 +1,7 @@
 // base
 @import '../base/_reset';
 @import '../base/vars';
+@import '../base/mixins';
 @import '../base/base';
 
 
@@ -17,4 +18,5 @@
 @import './section-map';
 @import './feedback';
 @import './footer';
+@import './nav-icon';
 
