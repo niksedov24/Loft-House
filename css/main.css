@@ -126,10 +126,23 @@ a:hover {
   color: #D4C17F;
   font-weight: 700;
 }
+@media screen and (max-width: 959px) {
+  .title-2 {
+    font-size: 1.75rem;
+  }
+}
 
 .link-bold {
   color: #D4C17F;
   font-weight: 700;
+}
+
+.none {
+  display: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 .header {
@@ -142,7 +155,7 @@ a:hover {
   padding-top: 1.875rem;
   padding-bottom: 4.625rem;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header {
     min-width: unset;
     row-gap: 3.125rem;
@@ -155,7 +168,7 @@ a:hover {
 }
 .header .header__top-row--mobile {
   position: fixed;
-  z-index: 9;
+  z-index: 90;
   left: 0;
   top: 0;
   width: 100%;
@@ -193,7 +206,7 @@ a:hover {
   justify-content: space-between;
   gap: 5.0625rem;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__title {
     font-size: 2rem;
     padding-bottom: 6.25rem;
@@ -204,7 +217,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 1.875rem;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__footer {
     display: flex;
     flex-direction: column;
@@ -216,13 +229,13 @@ a:hover {
 .header__nav-btn {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav-btn {
     display: block;
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav {
     display: none;
   }
@@ -259,7 +272,7 @@ a:hover {
 .info--tel::before {
   background-image: url(/images/header/phone.svg);
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .info {
     font-size: 0.875rem;
     padding-left: 1.625rem;
@@ -269,6 +282,7 @@ a:hover {
 .benefits {
   padding: 7.5rem 0;
   position: relative;
+  overflow: hidden;
 }
 .benefits:after {
   content: "II";
@@ -286,12 +300,26 @@ a:hover {
   display: flex;
   gap: 4.375rem;
 }
+@media screen and (max-width: 959px) {
+  .benefits__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 2.5rem 1.875rem;
+  }
+}
 .benefits__item {
   text-align: center;
 }
 .benefits__item img {
   width: 5rem;
   height: 5rem;
+}
+@media screen and (max-width: 959px) {
+  .benefits__item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
 }
 
 .benefits__item-img {
@@ -303,6 +331,11 @@ a:hover {
   line-height: 1.35;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 959px) {
+  .benefits__item-title {
+    font-size: 1rem;
+  }
 }
 
 .appartments {
@@ -324,11 +357,22 @@ a:hover {
 .appartments__title {
   margin-bottom: 5.5rem;
 }
+@media screen and (max-width: 959px) {
+  .appartments__title {
+    margin-bottom: 2.75rem;
+  }
+}
 
 .appartments__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.875rem;
+}
+@media screen and (max-width: 959px) {
+  .appartments__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .card {
@@ -373,11 +417,23 @@ a:hover {
   font-size: 1.5rem;
   z-index: 9;
 }
+@media screen and (max-width: 959px) {
+  .card__title {
+    font-size: 1.25rem;
+    left: 1.875rem;
+    bottom: 1.875rem;
+  }
+}
 
 .cta {
   padding: 11.25rem 0;
   background-image: url(/images/cta-bg.jpg);
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 959px) {
+  .cta {
+    padding: 3.75rem 0;
+  }
 }
 
 .cta__title {
@@ -389,6 +445,11 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 1.875rem;
 }
+@media screen and (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cta__text {
   line-height: 1.5;
@@ -397,11 +458,21 @@ a:hover {
 .cta__text p + p {
   margin-top: 1em;
 }
+@media screen and (max-width: 959px) {
+  .cta__text {
+    font-size: 0.875rem;
+  }
+}
 
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.1875rem 1.875rem;
+}
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__input {
@@ -429,6 +500,11 @@ a:hover {
   color: #e7e7e7;
   text-align: center;
   line-height: 1.23;
+}
+@media screen and (max-width: 959px) {
+  .form-privacy--bottom {
+    grid-row: 4/5;
+  }
 }
 
 .form__button {

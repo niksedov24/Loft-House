@@ -10,10 +10,17 @@
 }
 .appartments__title {
     margin-bottom: 5.5rem;
+    @include mediaTablet{
+        margin-bottom: 2.75rem;
+    }
 }
 
 .appartments__cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 1.875rem;
+    @include mediaTablet{
+        display: grid;
+        grid-template-columns:  repeat(auto-fit,minmax(290px, 1fr));
+    }
 }

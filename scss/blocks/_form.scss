@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.1875rem 1.875rem;
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
     
 }
 .form {
@@ -30,6 +33,11 @@
     color: $privacy;
     text-align: center;
     line-height: 1.23;
+    &--bottom{
+        @include mediaTablet{
+            grid-row: 4/5;
+        }
+    }
 }
 .form__button {
     background-color: $accent;

@@ -1,7 +1,7 @@
 .benefits{
     padding: 7.5rem 0;
     position: relative;
-   
+    overflow: hidden;
 
     &:after{
         content: 'II';
@@ -13,6 +13,11 @@
         margin: 0 auto;
         display: flex;
         gap: 4.375rem;
+        @include mediaTablet {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 2.5rem 1.875rem;
+        }
        
     }
     &__item{
@@ -20,18 +25,27 @@
         img{
             width: 5rem;
             height: 5rem;
+            @include mediaTablet{
+                width: 60px;
+                height: 60px;
+                margin-bottom: 20px;
+            }
 
         }
     }
 }
 .benefits__item-img{
     margin-bottom: 3.3125rem;
+   
 }
 .benefits__item-title{
     font-size: 1.25rem;
     line-height: 1.35;
     font-weight: 300;
     font-family: $font-secondary;
+    @include mediaTablet {
+        font-size: 1rem;
+    }
 }
 
 
