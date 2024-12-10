@@ -5,6 +5,10 @@
     padding-bottom: 3.1875rem;
     font-size: 0.875rem;
     letter-spacing: 0.05rem;
+    @include mediaTablet {
+        padding-top: 2.25rem;
+        padding-bottom: 1.5625rem;
+    }
 }
 
 .container {
@@ -14,6 +18,10 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1.875rem;
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 2.5rem 1.875rem;
+    }
 
 }
 .footer__logo {

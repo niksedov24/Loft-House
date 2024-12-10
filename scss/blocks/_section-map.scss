@@ -10,10 +10,16 @@
         line-height: 1;
         top: 10.625rem;
     }
+    @include mediaTablet {
+        padding: 5.625rem 0;
+    }
 } 
 
 .section-map__title {
     margin-bottom: 5.5rem;
+    @include mediaTablet {
+        margin-bottom: 2.75rem;
+    }
 }
 
 .section-map__map {

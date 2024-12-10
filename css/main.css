@@ -521,6 +521,7 @@ a:hover {
 }
 
 .video {
+  overflow: hidden;
   text-align: center;
   position: relative;
 }
@@ -555,6 +556,12 @@ a:hover {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 959px) {
+  .video__play {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 
 .section-map {
   padding: 11.25rem 0;
@@ -574,9 +581,19 @@ a:hover {
   line-height: 1;
   top: 10.625rem;
 }
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 5.625rem 0;
+  }
+}
 
 .section-map__title {
   margin-bottom: 5.5rem;
+}
+@media screen and (max-width: 959px) {
+  .section-map__title {
+    margin-bottom: 2.75rem;
+  }
 }
 
 .map {
@@ -587,9 +604,19 @@ a:hover {
 .feedback {
   padding-bottom: 11.25rem;
 }
+@media screen and (max-width: 959px) {
+  .feedback {
+    padding-bottom: 5.625rem;
+  }
+}
 
 .feedback__title {
   margin-bottom: 2.375rem;
+}
+@media screen and (max-width: 959px) {
+  .feedback__title {
+    margin-bottom: 1.1875rem;
+  }
 }
 
 .feedback__form {
@@ -597,6 +624,11 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.875rem;
   align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .feedback__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {
@@ -606,11 +638,23 @@ a:hover {
   font-size: 0.875rem;
   letter-spacing: 0.05rem;
 }
+@media screen and (max-width: 959px) {
+  .footer {
+    padding-top: 2.25rem;
+    padding-bottom: 1.5625rem;
+  }
+}
 
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.875rem;
+}
+@media screen and (max-width: 959px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 2.5rem 1.875rem;
+  }
 }
 
 .footer__logo {
