@@ -12,12 +12,12 @@
         transform: translate(0%, -50%);
         width: 1.3125rem;
         height: 1.3125rem;
-        background-image: url(../Loft-House/images/header/map.svg);
+        background-image: url(../../images/header/map.svg);
         background-position: center;
         background-repeat: no-repeat;
     }
     &--tel::before{
-        background-image: url(../Loft-House/images/header/phone.svg)
+        background-image: url(../../images/header/phone.svg)
     }
     @include mediaTablet {
         font-size: 0.875rem;
