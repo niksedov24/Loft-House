@@ -52,7 +52,7 @@ phoneInputs.forEach((input)=>{
                 },
                  {
             iconLayout: 'default#image',
-            iconImageHref: '/images/map/location-pin.svg',
+            iconImageHref: './images/map/location-pin.svg',
             iconImageSize: [40, 40],
             iconImageOffset: [-20, -40],
         });

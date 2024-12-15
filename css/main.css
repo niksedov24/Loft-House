@@ -147,7 +147,7 @@ a:hover {
 
 .header {
   min-height: 840px;
-  background-image: url(/images/header/header-bg.jpg);
+  background-image: url(../images/header/header-bg.jpg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -265,12 +265,12 @@ a:hover {
   transform: translate(0%, -50%);
   width: 1.3125rem;
   height: 1.3125rem;
-  background-image: url(/images/header/map.svg);
+  background-image: url(../../images/header/map.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .info--tel::before {
-  background-image: url(/images/header/phone.svg);
+  background-image: url(../../images/header/phone.svg);
 }
 @media screen and (max-width: 959px) {
   .info {
@@ -427,7 +427,7 @@ a:hover {
 
 .cta {
   padding: 11.25rem 0;
-  background-image: url(/images/cta-bg.jpg);
+  background-image: url(../../images/cta-bg.jpg);
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 959px) {
@@ -771,7 +771,7 @@ a:hover {
 }
 
 [class*=balloon__close-button] {
-  background: url("/images/map/cross.svg") 50% no-repeat !important;
+  background: url("../../images/map/cross.svg") 50% no-repeat !important;
   width: 15px !important;
   height: 15px !important;
   margin: 10px 7px;
