@@ -771,7 +771,7 @@ a:hover {
 }
 
 [class*=balloon__close-button] {
-  background: url("../../images/map/cross.svg") 50% no-repeat !important;
+  background: url("./images/map/cross.svg") 50% no-repeat !important;
   width: 15px !important;
   height: 15px !important;
   margin: 10px 7px;
